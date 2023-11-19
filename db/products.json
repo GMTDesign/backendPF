@@ -9,7 +9,8 @@
     "stock": 100,
     "category": "cuerda",
     "thumbnails": [
-      "guitarra_01.jpg"
+      "guitarra_01.jpg",
+      "guitarra_04.jpg"
     ]
   },
   {
@@ -22,7 +23,8 @@
     "stock": 120,
     "category": "cuerda",
     "thumbnails": [
-      "guitarra_03.jpg"
+      "guitarra_03.jpg",
+      "guitarra_20.jpg"
     ]
   },
   {
@@ -60,7 +62,9 @@
     "status": true,
     "stock": 55,
     "category": "viento",
-    "thumbnails": []
+    "thumbnails": [
+      "clarinete_01.jpg"
+    ]
   },
   {
     "id": "ce3aca29-b28e-4047-9483-1c86d2b841d5",
@@ -121,7 +125,7 @@
     "code": "C-370",
     "price": 20000,
     "status": true,
-    "stock": 150,
+    "stock": 50,
     "category": "cuerda",
     "thumbnails": [
       "guitarra_02.jpg"

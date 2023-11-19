@@ -50,14 +50,15 @@ export class ProductManager {
         for (const propName of Object.keys(data)) {
             if (propName === "id") throw new Error('No puede modificar el id del producto')
         }
+        const oldThumbnails = this.#products[index].thumbnails
         const updateProduct = {
             ...this.#products[index],
-            data
-        }
-        if (data.thumbnails) {
-            this.#products[index].thumbnails.push(...data.thumbnails)
+            ...data
         }
         const product = new Product(updateProduct)
+        if (data.thumbnails) {
+            product.thumbnails = [...oldThumbnails, ...data.thumbnails]
+        }
         this.#products[index] = product.asPOJO()
         await fs.writeFile(this.#path, JSON.stringify(this.#products, null, 2))
         return this.#products[index]
